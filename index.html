@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="animations.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo" >Dexter Alolod</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">< About/></a></li>
+          <li><a href="#education"> < Education/></a></li> <!--Experience-->
+          <li><a href="#projects">< Projects/></a>  <!--Projects-->
+          <ul class="submenu">
+            <li><a href="#activity1"onclick="toggleMenu()" >Activity 1</a></li>
+            <li><a href="#activity2"onclick="toggleMenu()">Activity 2</a></li>
+            <li><a href="#activity3"onclick="toggleMenu()">Activity 3</a></li>
+            <li><a href="#activity4"onclick="toggleMenu()">Activity 4</a></li>
+            <li><a href="#activity5"onclick="toggleMenu()">Activity 5</a></li>
+            <li><a href="#activity6"onclick="toggleMenu()">Activity 6</a></li>
+            <li><a href="#activity7"onclick="toggleMenu()">Activity 7</a></li>
+            <li><a href="#activity8"onclick="toggleMenu()">Activity 8</a></li>
+          </ul></li>
+          <li><a href="#contact">< Contact/></a></li>
+          <li><a href="#gallery">< Gallery/></a></li>
+<!--Navbar-->
+<div class="bx bx-moon" id="darkmode" onclick="toggleDarkMode()"></div>
+
+  <script>
+    function toggleDarkMode() {
+      // Toggle the 'dark-mode' class on the body
+      document.body.classList.toggle('dark-mode');
+      
+      // Optionally change the icon to reflect the state
+      const modeIcon = document.getElementById('darkmode');
+      if (document.body.classList.contains('dark-mode')) {
+        modeIcon.classList.replace('bx-moon', 'bx-sun');
+      } else {
+        modeIcon.classList.replace('bx-sun', 'bx-moon');
+      }
+    }
+  </script>
+
+        </ul>
+      </div>
+    </nav>
+  
+    <nav id="hamburger-nav">
+      <div class="logo">Dexter Alolod</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li><!--Experience-->
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a>
+            <ul class="submenu" >
+              <li><a href="#activity1"onclick="toggleMenu()">Activity 1</a></li>
+              <li><a href="#activity2"onclick="toggleMenu()">Activity 2</a></li>
+              <li><a href="#activity3"onclick="toggleMenu()">Activity 3</a></li>
+              <li><a href="#activity4"onclick="toggleMenu()">Activity 4</a></li>
+              <li><a href="#activity5"onclick="toggleMenu()">Activity 5</a></li>
+              <li><a href="#activity6"onclick="toggleMenu()">Activity 6</a></li>
+              <li><a href="#activity7"onclick="toggleMenu()">Activity 7</a></li>
+              <li><a href="#activity8"onclick="toggleMenu()">Activity 8</a></li>
+            </ul></li><!--Projects-->
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        
+        <img class="section" data-aos="fade-up" src="./assets/dexter.png" alt="Description">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Dexter Alolod</h1>
+        <p class="section__text__p2">A 3rd year Computer Science student driven by passion who loves creating innovative solution to eradicate pressing challenges.</p>
+        
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/alolod.pdf')"
+          >
+            View Resume
+          </button>
+          <!--<button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>-->
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/link1.webp"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/dexter-alolod-541b08175/'"
+          />
+          <img
+            src="./assets/git2.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/aloloddexter'" 
+          />
+        </div>
+      </div>
+    </section><br><br><br><br>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/me.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Work Experience</h3>
+              <p>Clerical Aide - Provincial Treasury of Agusan del Sur 2018</p>
+              <p>Clerical Aide - Department of Agriculture 2020</p>
+              <p>Clerical Aide - Public Employment Service Office <br> of Agusan del Sur 2021 - 2023</p>
+            </div>
+            <!--<div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3 id="education">Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>-->
+          </div>
+          <div class="text-container">
+            <p>
+              I am a 21-year-old Tech with an insatiable appetite for knowledge and a boundless passion for the world of technology.
+               My unwavering motivation and unrelenting optimism define me as a student constantly hungry to delve deeper into the intricacies of the Tech Industry. 
+              At the heart of my current journey lies a relentless pursuit of web application development, accompanied by a thirst for mastering diverse programming languages and modern web technologies. 
+              I am not merely an observer but an active participant in the ever-evolving landscape of tech, determined to contribute my skills and creativity to shape its future.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section><br><br>
+    <section id="experience">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Programming Language Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VB.Net</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+             
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+      <!--Education-->
+      <section id="education">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Educational Background</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/pces.jpg"
+                  alt="Project 1"
+                  class="education-img"
+                />
+              </div>
+              <p class="section__text__p1">Elementary</p>
+              <h2 class="experience-sub-title project-title">Patin-ay Central Elementary School</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.facebook.com/patinayces'"
+                >
+                  Visit Facebook Page
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/pnhs.jpg"
+                  alt="Project 2"
+                  class="education-img"
+                />
+              </div>
+              <p class="section__text__p1">Highschool</p>
+              <h2 class="experience-sub-title project-title">Patin-ay National Highschool</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.facebook.com/patnhs'"
+                >
+                Visit Facebook Page
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/NEMSU.png"
+                  alt="Project 2"
+                  class="education-img"
+                />
+              </div>
+              <p class="section__text__p1">College</p>
+              <h2 class="experience-sub-title project-title">Northeastern Mindanao State University</h2>
+              <div class="btn-container">
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.facebook.com/nemsuliangacampus'"
+                >
+                Visit Facebook Page
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Projects / Activities-->
+
+    <section id="projects">
+      <p class="section__text__p1">My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/logo1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title" id="activity1">Activity 1</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./activities/activity 1./main.html', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/logo2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"  id="activity2">Activity 2</h2>
+            
+            <div class="btn-container">
+              
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./activities/activity 2./index.html', '_blank')"
+              
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/logo3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"  id="activity3">Activity 3</h2>
+            <div class="btn-container">
+            
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./activities/activity 3./index.html', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/logo4.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title"  id="activity4">Activity 4</h2>
+              <div class="btn-container">
+                
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('./activities/activity 4./index.html', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/logo5.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title"  id="activity5">Activity 5</h2>
+              <div class="btn-container">
+                
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('./activities/activity 5./index.html', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/logo6.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title"  id="activity6">Activity 6</h2>
+              <div class="btn-container">
+                
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('./activities/activity 6./index2.html', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/logo7.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title"  id="activity7">Activity 7</h2>
+              <div class="btn-container">
+                
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('./activities/activity 7./html/index.html', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title"  id="activity8">Activity 8</h2>
+              <div class="btn-container">
+                
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('./activities/activity 8./form.html', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  <!--GALLERY-->
+  <section id="gallery">
+    <h1 class="title">My Gallery</h1>
+    
+    <div id="family-gallery" class="gallery-section">
+        <h1 class="gallery-sub-title" style="font-size: 35px;">Family</h1>
+        <div class="image-container">
+            <!-- Add your family images here -->
+            <img src="./assets/family/1.jpg" alt="Family Photo 1" class="gallery-image">
+            <img src="./assets/family/2.jpg" alt="Family Photo 2" class="gallery-image">
+            <img src="./assets/family/3.jpg" alt="Family Photo 3" class="gallery-image"><br>
+            <img src="./assets/family/4.jpg" alt="Family Photo 4" class="gallery-image">
+            <img src="./assets/family/5.jpg" alt="Family Photo 5" class="gallery-image">
+            <img src="./assets/family/6.jpg" alt="Family Photo 6" class="gallery-image">
+            <img src="./assets/family/9.jpg" alt="Family Photo 7" class="gallery-image">
+            
+
+            <!-- More images... -->
+        </div>
+    </div><br><br><br><br>
+    
+    <div id="friends-gallery" class="gallery-section">
+        <h1 class="gallery-sub-title" style="font-size: 35px;">Classmates and Friends</h1>
+        <div class="image-container">
+            <!-- Add your classmates and friends images here -->
+            <img src="./assets/classmates and friends/gallery5.jpg" alt="Friends Photo 1" class="gallery-image">
+            <img src="./assets/classmates and friends/gallery11.jpg" alt="Friends Photo 2" class="gallery-image">
+            <img src="./assets/classmates and friends/gallery12.jpg" alt="Friends Photo 3" class="gallery-image">
+            <img src="./assets/classmates and friends/gallery13.jpg" alt="Friends Photo 4" class="gallery-image">
+            <img src="./assets/classmates and friends/gallery14.jpg" alt="Friends Photo 5" class="gallery-image">
+            <img src="./assets/classmates and friends/gallery16.jpg" alt="Friends Photo 6" class="gallery-image">
+            <img src="./assets/classmates and friends/gallery17.jpg" alt="Friends Photo 7" class="gallery-image">
+           
+            <!-- More images... -->
+        </div>
+    </div>
+</section>
+
+
+    <!--CONTACT-->
+    <section id="contact" style="margin-top: 850px;">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/mail.png" width="50px" height="50px"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:letijio02@gmail.com">Dexter Alolod</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/link1.webp"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/dexter-alolod-541b08175/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section><br><br><br>
+    <footer>
+      <p>Copyright &#169; 2023 Dexter Alolod. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
