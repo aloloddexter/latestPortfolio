@@ -29,7 +29,12 @@
             <li><a href="#activity8"onclick="toggleMenu()">Activity 8</a></li>
           </ul></li>
           <li><a href="#contact">< Contact/></a></li>
-          <li><a href="#gallery">< Gallery/></a></li>
+          <li><a href="#gallery">< Gallery/></a>
+            <ul class="submenu">
+              <li><a href="#my-family">My Family</a></li>
+              <li><a href="#myclassmate_friends">My Friends</a></li>
+          </ul>
+          </li>
 <!--Navbar-->
 <div class="bx bx-moon" id="darkmode" onclick="toggleDarkMode()"></div>
 
@@ -75,7 +80,12 @@
               <li><a href="#activity8"onclick="toggleMenu()">Activity 8</a></li>
             </ul></li><!--Projects-->
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+          <li><a href="#gallery" onclick="toggleMenu()">Gallery</a>
+            <ul class="submenu">
+              <li><a href="#my-family">My Family</a></li>
+              <li><a href="#myclassmate_friends">My Friends</a></li>
+          </ul>
+          </li>
         </div>
       </div>
     </nav>
@@ -512,7 +522,7 @@
     <h1 class="title">My Gallery</h1>
     
     <div id="family-gallery" class="gallery-section">
-        <h1 class="gallery-sub-title" style="font-size: 35px;">Family</h1>
+        <h1 class="gallery-sub-title" style="font-size: 35px;" id="my-family">Family</h1>
         <div class="image-container">
             <!-- Add your family images here -->
             <img src="./assets/family/1.jpg" alt="Family Photo 1" class="gallery-image">
@@ -529,7 +539,7 @@
     </div><br><br><br><br>
     
     <div id="friends-gallery" class="gallery-section">
-        <h1 class="gallery-sub-title" style="font-size: 35px;">Classmates and Friends</h1>
+        <h1 class="gallery-sub-title" style="font-size: 35px;" id="myclassmate_friends">Classmates and Friends</h1>
         <div class="image-container">
             <!-- Add your classmates and friends images here -->
             <img src="./assets/classmates and friends/gallery5.jpg" alt="Friends Photo 1" class="gallery-image">
