@@ -371,9 +371,9 @@ section {
 }
 
 .experience-details-container {
-  display: flex;
+  display:flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .article-container {
@@ -383,7 +383,9 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+ 
 }
+
 
 article {
   display: flex;
@@ -401,8 +403,11 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-  position:static;
+  position: absolute;
+  display: contents;
 }
+
+
 
 .color-container {
   border-color: rgb(163, 163, 163);
@@ -410,13 +415,12 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 1rem;
+
+
 }
 
 .project-title {
-  margin: 1rem;
   color: black;
 }
 
@@ -739,3 +743,4 @@ footer p {
   from { transform: translateY(0); }
   to { transform: translateY(-15px); }
 }
+
